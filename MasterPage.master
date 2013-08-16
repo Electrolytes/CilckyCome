@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" ClientIDMode="Static" %>
+
+<!DOCTYPE html>
+<link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+ <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <script src="sliderengine/initslider-1.js"></script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title>
+        WWW.CLICKyCOMES.COM
+    </title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server"  >
+    <div>        
+        <header>
+<!-- Encabezado -->
+   <!-- <asp:Menu CssClass="Menud" ID="MnPrincipal" runat="server" Orientation="Horizontal" >
+        <Items>    
+         <asp:MenuItem text="Inicio" NavigateUrl="~/Default.aspx"></asp:MenuItem> 
+            <asp:MenuItem text="Ingresar" NavigateUrl="~/Ingreso.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Registrate" NavigateUrl="~/AltaRestaurantes.aspx"></asp:MenuItem>
+            <asp:MenuItem text="Ayuda" NavigateUrl="~/Ayuda.aspx"></asp:MenuItem>
+
+        </Items>
+    </asp:Menu>
+<!-- Fin Encabezado -->
+<div id='cssmenu'>
+<ul>
+   <li><a href='Default.aspx'><span>Inicio</span></a></li>
+   <li><a href='Ingreso.aspx'><span>Ingresar</span></a></li>
+   <li><a href='AltaRestaurantes.aspx''><span>Registros</span></a></li>
+   <li class='last'><a href='Ayuda.aspx'><span>Contacto</span></a></li>
+</ul>
+</div>
+
+
+
+        </header>
+
+
+<!-- Contenido -->         
+   <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+		<div id="box2">
+	 <!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5204744006a52bed"></script>
+<script type="text/javascript">
+    addthis.layers({
+        'theme': 'dark',
+        'share': {
+            'position': 'right',
+            'numPreferredServices': 5
+        }
+    });
+</script>
+<!-- AddThis Smart Layers END -->
+		</div>
+ <!-- Fin Contenido -->               
+    </div>
+    </form>
+</body>
+</html>
